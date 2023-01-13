@@ -3,8 +3,8 @@ import platform
 from threading import Thread
 from time import sleep
 
-from ..config import config
-from ..metrics import get_registry, push
+from gunicorn_pushgateway_workers.config import config
+from gunicorn_pushgateway_workers.metrics import get_registry, push
 
 
 class BasePushToGetaway:

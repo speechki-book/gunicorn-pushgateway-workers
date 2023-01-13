@@ -2,7 +2,7 @@ from typing import Any
 
 from prometheus_client import CollectorRegistry, multiprocess, push_to_gateway
 
-from .config import config
+from gunicorn_pushgateway_workers.config import config
 
 
 def get_registry() -> CollectorRegistry:

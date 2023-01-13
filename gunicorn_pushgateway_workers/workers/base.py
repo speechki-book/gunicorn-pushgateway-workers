@@ -1,7 +1,7 @@
 from threading import Lock
 
-from ..config import config
-from ..job.consts import IMPL_MAP
+from gunicorn_pushgateway_workers.config import config
+from gunicorn_pushgateway_workers.job.consts import IMPL_MAP
 
 JOB_CLASS = IMPL_MAP[config.IMPL]
 

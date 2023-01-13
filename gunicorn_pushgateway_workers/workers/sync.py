@@ -1,6 +1,6 @@
 from gunicorn.workers.sync import SyncWorker as OriginalSyncWorker
 
-from .base import BaseWorker
+from gunicorn_pushgateway_workers.workers.base import BaseWorker
 
 
 class SyncWorker(BaseWorker, OriginalSyncWorker):
