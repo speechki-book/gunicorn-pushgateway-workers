@@ -1,11 +1,13 @@
 # gunicorn-pushgateway-workers
 
 ## Usage
-[Set worker class](https://docs.gunicorn.org/en/stable/settings.html#worker-class)
+1. [Enable multiprocess mode](https://github.com/prometheus/client_python#multiprocess-mode-eg-gunicorn)
 
-Available workers:
-* gunicorn_pushgateway_workers.workers.sync.SyncWorker (default in gunicorn)
-* gunicorn_pushgateway_workers.workers.uvicorn.UvicornWorker
+2. [Set worker class](https://docs.gunicorn.org/en/stable/settings.html#worker-class)
+
+    Available workers:
+   * gunicorn_pushgateway_workers.workers.sync.SyncWorker (default in gunicorn)
+   * gunicorn_pushgateway_workers.workers.uvicorn.UvicornWorker
 
 
 ## Configuration (env)
